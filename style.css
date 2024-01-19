@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  background-color: #9fff9c;
+}
+
+.logo {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  padding: 16px;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  color: gray;
+}
+
+.addBookContainer {
+  width: 100%;
+  height: 100px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#addNewBook {
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+  background-color: black;
+  color: gray;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+#addNewBook:hover {
+  transform: rotate(360deg);
+}
+
+form {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 250px;
+  padding: 18px;
+  border-radius: 18px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0eef1;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.read-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 10px;
+}
+
+input {
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.submit {
+  width: 190px;
+  padding: 10px 0;
+  font-size: 16px;
+  background-color: #9fff9c;
+  border: none;
+  border-radius: 8px;
+}
+
+input,
+button {
+  cursor: pointer;
+}
+
+#container {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  gap: 10px;
+  margin: 10px;
+}
+
+.newBook {
+  width: 200px;
+  height: 200px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #f0eef1;
+  border-radius: 8px;
+  flex-direction: column;
+  background-color: #f0eef1;
+}
+
+.newBook p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+}
+
+.remove {
+  padding: 10px 66px;
+  font-size: 16px;
+  background-color: gray;
+  border: none;
+  border-radius: 8px;
+}

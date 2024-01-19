@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <h1>The Odin Library</h1>
+    </div>
+    <div class="addBookContainer">
+      <div id="addNewBook">+</div>
+    </div>
+    <div id="overlay">
+      <form>
+        <h2>Add new book</h2>
+        <input class="title" type="text" placeholder="Title" required />
+        <input class="author" type="text" placeholder="Author" required />
+        <input class="pages" type="number" placeholder="Pages" required />
+        <div class="read-container">
+          <label for="checkbox">Have you read it? </label>
+          <input type="checkbox" value="Not Read" id="checkbox" />
+        </div>
+        <button type="submit" class="submit">Submit</button>
+      </form>
+    </div>
+    <div id="container"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
